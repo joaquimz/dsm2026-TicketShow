@@ -2,59 +2,76 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Site institucional da Empresa X">
-    <meta name="keywords" content="empresa, serviços, contato">
-    <meta name="author" content="Seu Nome">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flexbox CSS</title>
-    <link rel="stylesheet" href="css/estilo.css">
-    <link rel="icon" href="img/brazil.png">
+    <meta name="description" content="Site de venda de ingressos para shows">
+    <meta name="author" content="Joaquim Teixeira">
+    <link rel="icon" href="img/logoticketshow.jpg" type="img">
+    <title>TicketShow</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
-
-
 <body>
     <div class="container">
-
-
-        <header>
-            <img src="img/brazil.png" alt="Logo da Empresa X">
-            <h1>Empresa X</h1>
+        <header class="navbar-topo">
+            <div class="logo-area">
+                <img src="img/logoticketshow.jpg" alt="Logo">
+                <h1>TicketShow</h1>
+            </div>
+            <nav>
+                <ul class="menu-topo">
+                    <li><a href="index.html"><i class="bi bi-house"></i> Home</a></li>
+                    <li><a href="shows.html"><i class="bi bi-music-note-beamed"></i> Shows</a></li>
+                    <li><a href="sobre.html"><i class="bi bi-info-circle"></i> Sobre</a></li>
+                    <li><a href="contato.html"><i class="bi bi-envelope"></i> Contato</a></li>
+                </ul>
+            </nav>
         </header>
 
+        <div class="conteudo">
+            <main>
+                <section class="principal">
+                    <h2>Destaques da Semana</h2>
+                    <p>Garanta já o seu ingresso para os maiores festivais de 2026. A TicketShow traz as melhores opções para quem curte música boa e experiências inesquecíveis.</p>
+                    <img src="img/drakeshow.webp" alt="Show ao vivo" class="img-secao">
 
-        <nav>
-            <ul>
-                <li><a href="index.html" title="Conheça a empresa">Página Inicial</a></li>
-                <li><a href="contato.html" title="Entre em contato">Fale Conosco</a></li>
-            </ul>
-        </nav>
+                    <h3>Agenda de Shows</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Data</th>
+                                <th>Artista</th>
+                                <th>Cidade</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>15/05</td>
+                                <td>Kanye West</td>
+                                <td>São Paulo</td>
+                            </tr>
+                            <tr>
+                                <td>20/05</td>
+                                <td>Djavan</td>
+                                <td>Santos</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="3">Vendas abertas 24h</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </section>
+            </main>
 
-
-        <main>
-            <section>
-                <h3>Conteúdo principal</h3>
-                <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Iusto maxime illum cumque repellendus labore commodi, expedita a.
-                    Laborum, cumque sunt minima, ipsam officiis aperiam praesentium,
-                    consequuntur dolor exercitationem est quia!
-                </p>
-                <img src="img/brazil.png" alt="Imagem ilustrativa">
-            </section>
-
-
-            <aside>
-                <h4>Barra lateral</h4>
-                <p>Informações adicionais da empresa.</p>
+            <aside class="menu-lateral">
+                <h3>Sugestões</h3>
+                <ul>
+                    <li><i class="bi bi-star"></i> VIP Experience</li>
+                    <li><i class="bi bi-ticket-perforated"></i> Meia Estudante</li>
+                </ul>
             </aside>
-        </main>
-
-
-        <footer>
-            <p>© 2025 Empresa X - Todos os direitos reservados.</p>
-        </footer>
-
-
-    </div>    
+        </div>
+        <footer>Joaquim - FATEC DSM</footer>
+    </div>
 </body>
 </html>
